@@ -1,0 +1,4 @@
+19-11-2023 22:27:11: Operation 'ASPNETLab10.ConsultationController.Index (ASPNETLab11)' by 0HMV97NKB00E3.
+19-11-2023 22:27:17: Operation 'ASPNETLab10.ConsultationController.Reg (ASPNETLab11)' by 0HMV97NKB00E3.
+19-11-2023 22:27:37: Operation 'ASPNETLab10.ConsultationController.Reg (ASPNETLab11)' by 0HMV97NKB00E3.
+19-11-2023 22:27:53: Operation 'ASPNETLab10.ConsultationController.Index (ASPNETLab11)' by 0HMV97O0R1KST.
