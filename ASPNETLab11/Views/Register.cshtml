@@ -1,0 +1,51 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model ASPNETLab10.Models.ConsultationModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width" />
+    <title>Reg</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    @{
+        ViewData["Title"] = "Reg";
+    }
+    <p>@ViewBag.Message</p>
+    <div class="main">
+        <form method="post" action="/Consultation/Reg">
+
+            <div>
+                <label asp-for="Name">Name</label>
+                <input type="text" asp-for="Name" required>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Email">Email:</label>
+                <input type="email" asp-for="Email" required>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Date">Date</label>
+                <input type="date" asp-for="Date" required>
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Product">Product</label>
+                <select asp-for="Product" required>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Basics">Basics</option>
+                </select>
+                <span asp-validation-for="Product" class="text-danger"></span>
+            </div>
+            <button type="submit">Sign up</button>
+        </form>
+
+    </div>
+</body>
